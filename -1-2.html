@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			html,body{
+				width: 100%;
+				height: 100%;
+			}
+			div{
+				height: 25%;
+				line-height: 400%;
+				color: #fff;
+				font-size: 30px;
+				position: relative;
+				text-align: center;
+			}
+			@-webkit-keyframes first{
+				form{
+					top: -25%;
+				}
+				to{
+					top: 0;
+				}
+			}
+			@-webkit-keyframes second{
+				form{
+					left: -100%;
+				}
+				to{
+					left: 0;
+				}
+			}
+			@-webkit-keyframes three{
+				form{
+					right: -100%;
+				}
+				to{
+					right: 0;
+				}
+			}
+			@-webkit-keyframes four{
+				form{
+					bottom: -25%;
+				}
+				to{
+					bottom: 0;
+				}
+			}
+			div:nth-child(1){ background: #000072; top: -25%; -webkit-animation: first 2s 1s; animation-fill-mode: forwards;}
+			div:nth-child(2){ background: #0000FF; left: -100%; -webkit-animation: second 2s 3s; animation-fill-mode: forwards;}
+			div:nth-child(3){ background: #008000; right: -100%; -webkit-animation: three 2s 5s; animation-fill-mode: forwards;}
+			div:nth-child(4){ background: #00FFFF; bottom: -25%; -webkit-animation: four 2s 7s; animation-fill-mode: forwards;}
+		</style>
+	</head>
+	<body>
+			<div>One</div>
+			<div>Two</div>
+			<div>Three</div>
+			<div>Four</div>
+	</body>
+</html>

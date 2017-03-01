@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			
+			.box{
+				margin-left: 200px ;
+				margin-top: 200px ;
+			}
+			/*给UL一个总宽*/
+			.center{
+				width: 800px;
+				height: 200px;
+				border: 1px solid red;
+				overflow: hidden;
+			}
+			/*给图片分配到ul的宽度*/
+			.center li img{
+				width: 200px;
+				height: 200px;
+				/*把图片调整到Ul的上面*/
+				-webkit-transform: translateY(-400px);
+				/*给图片设置*/
+				-webkit-transition: transform 1s linear 0s;
+			}
+			
+			.center li {
+				display: block;
+				width: 200px;
+				height: 200px;
+				/*border: 0px solid saddlebrown;*/
+				float: left;
+				text-align: center;
+				line-height: 200px;
+				background: slateblue;
+			}
+			
+			.center li:hover img{
+				-webkit-transform: translateY(-200px);
+			}
+			.center li a{
+				text-decoration: none;
+				color: salmon;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<ul class="center">
+				<li><a href="#">图片1</a><img src="img/3.jpg"/></li>
+				<li><a href="#">图片2</a><img src="img/4.jpg"/></li>
+				<li><a href="#">图片3</a><img src="img/5.jpg"/></li>
+				<li><a href="#">图片4</a><img src="img/6.jpg"/></li>
+			</ul>
+		</div>
+	</body>
+</html>

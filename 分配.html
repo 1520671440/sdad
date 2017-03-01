@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title></title>
+		<style type="text/css">
+		 *{
+		 	margin: 0;
+		 	padding: 0;
+		 }
+			.hde,.ft{
+				width: 100%;
+				height: 30px;
+				background:violet;
+				text-align: center;
+			}
+			.box{
+				width: 100%;
+				height: 100%;
+				background: red;
+				overflow:hidden;
+				/*弹性盒*/
+				-webkit-box-orient: vertical;/*垂直*/
+				display:-webkit-box
+			}
+			
+			html,body{
+				width: 100%;
+				height: 100%;
+			} 
+			.sti{
+				background: orangered;
+				-webkit-box-flex:1;
+				text-align: center;
+				overflow:auto;
+			}
+			
+			
+			.ft{
+				width: 100%;
+				-webkit-box-orient:horizontal;/*水平*/
+				display:-webkit-box;
+			}
+			.ft a {
+				display: block;
+				height: 33px;
+				-webkit-box-flex:1;
+				background: darkcyan;
+				color: slateblue;
+				text-decoration: none;
+				text-align: center;				
+			}
+			.ft a:hover{
+				color: #FF0000;
+			}
+			.sti,div{
+				/*
+				 * overflow-y:scroll;
+				 * overflow-x:scroll;
+				 */\
+				 width: 100%;
+				 height: 30px;
+				background: firebrick;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+		<header class="hde">头部</header>
+		<section class="sti">主体
+			<div>剑姬</div>
+			<div>蒙多</div>
+			<div>剑圣</div>
+			<div>剑豪</div>
+			<div>剑魔</div>
+			<div>发条</div>
+			<div>螳螂</div>
+			<div>皎月</div>
+			<div>三只手</div>
+			<div>搅屎棍</div>
+			<div>流浪</div>
+			<div>安妮</div>
+			<div>德莱文</div>
+			<div>ez</div>
+			<div>蚂蚱</div>
+			<div>火男</div>
+			<div>劫</div>
+			<div>男刀</div>
+			<div>日女</div>
+			<div>ez</div>
+			<div>奥巴马</div>
+			<div>女警</div>
+			<div>布隆</div>
+			<div>牛头</div>
+			<div>ez</div>
+			<div>奥巴马</div>
+			<div>女警</div>
+			<div>布隆</div>
+			<div>牛头</div>
+		</section>		
+		<footer class="ft">
+			<a href="#">天时</a><a href="#">地利</a><a href="#">人和</a>
+		</footer>
+		</div>
+	</body>
+</html>

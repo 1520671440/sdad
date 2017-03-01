@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>animation  不需要事件触发</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			
+			html,body{
+				width: 100%;
+				height: 100%;
+			}
+			
+			@-webkit-keyframes wq{
+				/*from*/0%{
+					width: 100px;
+				}
+				50%{
+					width: 400px;
+				}
+				/*to*/100%{
+					width: 900px;
+				}
+				/*
+				animation:点定义后调用   
+				 第一种方法：
+				  		from  to
+				第二种方法：
+						0%到100%  中间还可以加  50%		
+				*/
+			}
+			
+			.box{
+				width: 100px;
+				height: 100px;
+				background: sandybrown;
+				margin: 200px auto;
+				/*想给谁动画，这句话就加给谁*/
+				-webkit-animation:wq 3s 2/*2是执行几次*/;
+				/*动画名称*/
+				/*-webkit-animation-name:wq;
+				-webkit-animation-duration: 2s;
+				-webkit-animation-timing-function: inherit;
+				/*执行次数*/
+				/*-webkit-animation-iteration-count:  infinite;
+				-webkit-animation-delay: 1s;*/
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			
+		</div>
+	</body>
+</html>

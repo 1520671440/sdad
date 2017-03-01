@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				width: 200px;
+				height: 200px;
+				background: yellowgreen;
+				-webkit-transition:transform 2s;
+				/*-webkit-transition-property: transfrom;*/      /*动画的属性*/
+				/*-webkit-transition-duration: 1s;*/             /*动画时间*/
+				/*-webkit-transition-timing-function: inherit;*/ /*动画类型*/
+				/*-webkit-transition-delay: 1s;*/                /*延迟*/
+				
+				
+				/*综合*/
+			-webkit-transition:all 1s ease-in-out ;
+			}
+			body:hover .box{
+				/*偏移*/;
+				/*-webkit-transform:translate(300px,130px)*/
+				/*-webkit-transform:translateX(100px);*/
+				/*-webkit-transform:translateY(100px);*/
+				/*-webkit-transform:translate(x,y)*/
+				/*-webkit-transform:translate3d(100px,100px,0);*/
+				
+				/*缩放    没有单位*/;
+				/*-webkit-transform:scale(0.5)*/			
+				/*-webkit-transform:scaleX(0.5);*/
+				/*-webkit-transform:scaleY(0.5);*/
+				/*-webkit-transform:scale3d(x,y,z);*/
+				
+				
+				/*倾斜*/
+				/*-webkit-transform:skew(12deg);
+				-webkit-transform:skewX(12deg);
+				-webkit-transform:skewY(12deg);
+				-webkit-transform:skew3d(x,y,z);*/
+				
+				/*旋转*/
+				/*-webkit-transform:rotate(300000000deg);*/
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			css3:
+				transition  需要事件触发
+				animation   不需要事件触发
+		-->
+		<div class="box">
+			鼠标划过盒子，下去100px
+		</div>
+	</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title>animation</title>
+		<style>
+			*{margin: 0;padding:0;}
+				
+			.box{
+				  display: block;
+				  width: 100%;
+				  height: 480px;
+				  -webkit-box-flex: 1;			  
+				 }
+			/* 第一个*/
+			@-webkit-keyframes wq1{
+				0%{
+					margin-top: -120px;
+				}
+				100%{
+					margin-top: 0;
+				}
+			}
+			/*第二个*/
+			@-webkit-keyframes wq2{
+				0%{
+					margin-left: -414px;
+				}
+				100%{
+					margin-left: 0;
+				}
+			}
+			/*
+			 第三个
+			 */
+			@-webkit-keyframes wq3{
+				0%{
+					margin-left: 414px;
+				}
+				100%{
+					margin-left: 0;
+				}
+			}
+			/*
+			 第四个
+			 */
+			@-webkit-keyframes wq4{
+				0%{
+					margin-top: 496px;
+				}
+				100%{
+					margin-top: 0;
+				}
+			}
+			.box .s1{
+				width: 100%;
+				height: 120px;
+				background: lightseagreen;
+				margin-top: -120px;
+				-webkit-animation: wq1 1s 1s;
+				-webkit-animation-fill-mode:forwards;,
+			}
+			.box .s2{
+				width: 100%;
+				height: 120px;
+				background: salmon;
+				margin-left: -414px;
+				-webkit-animation: wq2 2s 2s;
+				-webkit-animation-fill-mode:forwards;
+			}
+			.box .s3{
+				width: 100%;
+				height: 120px;
+				background: darkorange;
+				margin-left: 414px;
+				-webkit-animation: wq3 3s 3s;
+				-webkit-animation-fill-mode:forwards;
+			}
+			.box .s4{
+				width: 100%;
+				height: 120px;
+				background: forestgreen;
+				margin-top: 496px;			
+				-webkit-animation: wq4 4s 4s;
+				-webkit-animation-fill-mode:forwards;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<section class="s1">上面</section>
+			<section class="s2">左面</section>
+			<section class="s3">右面</section>
+			<section class="s4">下面</section>
+		</div>
+	</body>
+</html>
